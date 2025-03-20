@@ -7,11 +7,7 @@
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
-  "scripts": {
-    "start": "npm start",
-    "stop": "pm2 stop sribot",
-    "restart": "pm2 restart sribot"
-  },
+
   "author": "WalukaPahan",
   "license": "GPL-3.0 license",
   "dependencies": {
