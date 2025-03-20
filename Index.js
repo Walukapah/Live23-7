@@ -1,7 +1,7 @@
 const { spawn } = require("child_process");
 
-const streamKey = "KEYYYYYYY"; // Replace with your key
-const videoSource = "video.mp4"; // Your video file
+const streamKey = "68pg-phuu-b57r-xa31-aja0"; // Replace with your key
+const videoSource = "mario.gif"; // Your video file
 const audioSource = "https://stream.zeno.fm/ez4m4918n98uv"; // Optional audio file
 
 function startStream() {
