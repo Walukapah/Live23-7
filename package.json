@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "24-7 live setup",
   "main": "Index.js",
+    "scripts": {
+    "start": "pm2 start index.js --deep-monitoring --attach --name live",
+    "stop": "pm2 stop live",
+    "restart": "pm2 restart live"
+  },
   "dependencies": {
     "abort-controller": "^3.0.0",
     "accepts": "^1.3.8",
