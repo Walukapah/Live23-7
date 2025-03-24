@@ -1,5 +1,17 @@
-FROM quay.io/lyfe00011/md:beta
-RUN git clone https://github.com/Walukapah/Live23-7 /root/LyFE/
-WORKDIR /root/LyFE/
-RUN yarn install
-CMD ["npm", "start"]
+FROM node:lts-buster
+
+RUN apt-get update && \
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
+
+COPY package.json .
+
+RUN npm install
+
+COPY . .
+
+CMD ["node", "."]
